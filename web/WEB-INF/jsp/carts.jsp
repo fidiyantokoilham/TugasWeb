@@ -185,7 +185,7 @@
                             </tbody>
                         </table>
                     
-                    <h1>TOTAL HARGA : $ ${total}</h1>
+                    <h1>TOTAL HARGA : $ ${carts}</h1>
                     </div>
                     <button href="${pageContext.request.contextPath}/product" class="btn btn-danger">Bayar</button>
                 </div>

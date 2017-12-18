@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public class CartBean {
 
-    private Map<Integer, Product> carts;
+    public Map<Integer, Product> carts;
 
     public CartBean(Map<Integer, Product> carts) {
         this.carts = carts;
