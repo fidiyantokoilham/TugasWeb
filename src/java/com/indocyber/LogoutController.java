@@ -20,11 +20,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LogoutController {
 
     @RequestMapping()
-    public String logout(HttpSession session, CartBean cb, Double totalHarga) {
+    public String logout(HttpSession session, CartBean cb) {
         
         if (session.getAttribute("cart") != null) {
             cb = (CartBean) session.getAttribute("cart");
-            //for (int i = 0; i < cartss.getCarts().size(); i++) {
             cb.getCarts().clear();
         }
 

@@ -255,8 +255,6 @@
 
                         <c:if test="${empty sessionScope.user}">
                             <li><a href="${pageContext.request.contextPath}/login"><button >Add to cart</button></a></li>
-                       
-        
                             </c:if>
                         <c:if test="${not empty sessionScope.user}">
                           <a href="${pageContext.request.contextPath}/cart/add/${e.id}" ><button class="btn btn-danger">Add to cart</button> </a>
@@ -264,7 +262,7 @@
                         </c:if> 
 
                     </div>
-                    <b aling="center">Rp. ${e.harga}<b> <p> </p>
+                    <b aling="center">$ ${e.harga}<b> <p> </p>
                             </td>
 
                         </c:forEach>
